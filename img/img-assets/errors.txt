@@ -1,0 +1,12 @@
+[3/4/2019, 3:29:37 PM] layer "client_1.png": Duplicate path: client_1.png
+[3/4/2019, 3:29:37 PM] layer "client_1.png": Duplicate path: client_1.png
+[3/4/2019, 3:29:37 PM] layer "+61 3146 8728, +61 0987 6543": Expected Either a default asset specification or a layer asset specification but "+" found.
+[3/4/2019, 3:29:37 PM] layer "mail.png": Duplicate path: mail.png
+[3/4/2019, 3:29:37 PM] layer "support@envato.net": Unsupported extension: net
+[3/4/2019, 3:29:37 PM] layer "google+": Expected end of input but "+" found.
+[3/4/2019, 3:29:37 PM] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[3/4/2019, 3:29:37 PM] layer "google+": Expected end of input but "+" found.
+[3/4/2019, 3:29:37 PM] layer "google+": Expected end of input but "+" found.
+[3/4/2019, 3:29:37 PM] layer "google+": Expected end of input but "+" found.
+[3/4/2019, 3:29:37 PM] layer "google+": Expected end of input but "+" found.
+[3/4/2019, 3:29:37 PM] layer "google+": Expected end of input but "+" found.

@@ -1,0 +1,217 @@
+/* Спецификация */
+
+/* Accient color - #f39c12 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:#fff;
+    font-weight: 400;}
+
+h1,h2,h3{
+    text-transform: uppercase;color:#0d0d0d
+    }
+
+h3{
+    font-size:20px; font-weight:bold}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;}
+
+.title-block {
+    padding:20px 0px;}
+
+.title-block .title{
+    display: flex;
+    margin: 0px auto;
+    padding: 0px 20px 0px 0px;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-right:#f39c12 5px solid;
+    align-items: center;
+    justify-content: flex-end}
+
+@media (max-width: 991px) {
+    .title-block .title {
+        padding:0px 15px;border:none; justify-content: center;margin-bottom:18pх}}
+
+
+
+/* "Экран 1" */
+.screen-1{
+    height: auto;
+    background-image: url(../img/img-assets/tri_bottom.png), url(../img/img-assets/Main-bg.jpg);
+    background-size: contain, cover;
+    background-repeat:no-repeat;
+    background-position: bottom, center;
+    background-attachment:scroll, fixed; 
+
+/*      -webkit-filter: blur(10px); /* Chrome, Opera, etc. */
+/*filter: url('blur.svg#blur'); /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
+/*filter: blur(10px); /* Firefox 35+, eventually all */
+}
+
+/* Header */
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;}
+
+#header img{
+    display: block;
+    margin: 0px auto;}
+
+/* Menu*/
+.menu{
+    white-space: nowrap;
+    margin: 66px 0px 0px 0px;}
+
+.menu__item{
+    margin: 0px 16px;
+    color:#fff;
+    text-align: center;}
+
+@media (max-width:767px){
+    .menu  {flex-direction: column; margin:30px 0px 0px 0px}
+    .menu__item {margin:16px 0px;}
+    .menu__item a::before{
+    content:" \\\\\a0 \a0 \a0 \a0 \a0"}
+    .menu__item span::after, .menu__item a::before{
+    opacity: 0}}
+
+
+
+
+.menu__item a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#fff}
+
+.menu__item a:hover{
+    color:#444;
+    cursor:pointer;
+    text-decoration: none;
+    color: #ffa32a;}
+
+.menu__item span::after{
+    content:"\a0 \a0 \a0 \a0 \a0 \\\\"}
+
+.intro{
+    text-transform: uppercase;
+    text-align: center;
+    color:#fff}
+
+.intro p {padding:0px 0px; margin: 0;}
+.intro .line1{padding-top: 60px; font-size:45px; font-weight: 100;}
+.intro .line2{font-size:65px; font-weight: 600;}
+.intro .line3{font-size:40px; font-weight: 100;}
+
+.intro .button{
+    padding:40px 0 150px 0;}
+.intro .button button{
+    height: 42px;
+    padding: 0px 40px;
+    background-color:#f39c12;
+    color:#fff;
+    text-transform: uppercase;
+    border:none;
+    outline: none}
+
+.intro .button button:hover{
+    cursor:pointer;
+    background-color:#de8f11;}
+
+
+@media (max-width:767px) 
+{.intro .line1{
+    padding-top: 20px;}}
+
+/* Экран 2 */
+
+
+
+.story{
+    padding:80px 0px 80px 0px;
+    border-bottom: 1px solid #e5e5e5}
+.story:last-child{
+    border-bottom: none}
+.story content{}
+.story .content .img{
+    margin-right: 20px}
+.story .content .img img{}
+.story .content .img img:hover{}
+.story .content .text{}
+
+
+.story .content .text .introtext {
+    font-weight: 100;font-size: 20px; color: #e74c3c}
+.story .content .text p{
+    color:#737373;
+    font-size:16px;}
+.story .image .img {
+    margin:0 auto}
+.story .image .img img {}
+
+ol{list-style: none;
+    counter-reset: baby;}
+
+ol li::before {
+    counter-increment: baby;
+    content: "Секция " counters(baby, ".") " ";   }
+
+
+/* Экран 3 */
+.screen-3 {
+    height: 800px;
+    background-image: url(../img/img-assets/tri_top.png), url(../img/img-assets/tri_bottom.png), url(../img/img-assets/bg2.jpg);
+    background-size: auto, auto, cover;
+    background-repeat:no-repeat;
+    background-position: top, bottom, center;
+    background-attachment: scroll, scroll, fixed;}
+
+/* Экран 14 */
+
+.contacts{
+    padding: 30px 0px 0px 0px}
+.contacts .form{}
+.contacts .form h3{
+    padding-bottom:20px}
+.contacts .form input{
+    background-color: #fff; 
+    border:2px solid #9d9d9d;
+    outline: none;
+    height:45px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    width:100%;
+    transition: all 0.3s}
+.contacts .form input:focus{
+    border:2px solid #f39c12;}
+.contacts .form textarea{
+    background-color: #fff; 
+    padding:20px 0px 0px 20px;
+    outline: none;
+    border:2px solid #9d9d9d;
+    width:100%;
+    margin-bottom:15px;
+    transition: all 0.3s;}
+.contacts .form textarea:focus{
+    border:2px solid #f39c12;}
+.contacts .form .form__name{}
+.contacts .form .form__input{}
+.contacts .form .form__message{}
+.contacts .form .form__btn{
+    background: none;
+    border:2px solid #f39c12;
+    outline: none;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight:600}
+
+.space{
+    height:200px}
